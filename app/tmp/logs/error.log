@@ -1,0 +1,308 @@
+2016-07-12 10:32:01 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 15]
+2016-07-12 10:32:01 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 10:32:31 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 12]
+2016-07-12 10:32:31 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 10:33:16 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/cakephp_blog/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3617): ConnectionManager::getDataSource('default')
+#3 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3644): Model->setSource('posts')
+#5 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#6 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#7 /var/www/html/cakephp_blog/app/Controller/PostsController.php(12): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-07-12 10:37:51 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:39:43 Error: Fatal Error (1): Class 'AppController' not found in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 5]
+2016-07-12 10:39:43 Error: [FatalErrorException] Class 'AppController' not found
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'AppContr...', '/var/www/html/c...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppContr...', '/var/www/html/c...', 5, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'AppContr...', '/var/www/html/c...', 5, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 10:39:56 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:41:59 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:42:35 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:45:45 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:46:55 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 10:47:14 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp_blog/post/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-12 10:49:59 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-12 11:25:30 Error: Fatal Error (4): syntax error, unexpected ':', expecting ';' in [/var/www/html/cakephp_blog/app/View/Posts/index.ctp, line 11]
+2016-07-12 11:25:30 Error: [FatalErrorException] syntax error, unexpected ':', expecting ';'
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 11:26:49 Error: Fatal Error (4): syntax error, unexpected ':', expecting ';' in [/var/www/html/cakephp_blog/app/View/Posts/index.ctp, line 11]
+2016-07-12 11:26:49 Error: [FatalErrorException] syntax error, unexpected ':', expecting ';'
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 11, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 11:53:44 Error: Fatal Error (4): syntax error, unexpected '{', expecting '(' in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 12]
+2016-07-12 11:53:44 Error: [FatalErrorException] syntax error, unexpected '{', expecting '('
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 12, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 11:54:10 Error: Fatal Error (4): syntax error, unexpected '$options' (T_VARIABLE) in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 15]
+2016-07-12 11:54:10 Error: [FatalErrorException] syntax error, unexpected '$options' (T_VARIABLE)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 12:00:42 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/html/cakephp_blog/app/Controller/PostsController.php, line 15]
+2016-07-12 12:00:42 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-12 12:27:29 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /cakephp_blog/posts/view
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-12 20:55:07 Error: [MissingActionException] Action PostsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'add',
+)
+Request URL: /cakephp_blog/posts/add
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-12 21:10:28 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/var/www/html/cakephp_blog/app/Model/Post.php, line 15]
+2016-07-12 21:10:28 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /cakephp_blog/posts/add
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 15, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-13 00:50:19 Error: [MissingActionException] Action PostsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'edit',
+)
+Request URL: /cakephp_blog/posts/edit
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-13 00:50:27 Error: [MissingActionException] Action PostsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'edit',
+)
+Request URL: /cakephp_blog/posts/edit/1
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-07-13 01:01:33 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp_blog/edit/3
+Stack Trace:
+#0 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-13 01:31:01 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp_blog/posts/delete/1
+Stack Trace:
+#0 [internal function]: PostsController->delete('1')
+#1 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-07-13 01:39:10 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/html/cakephp_blog/app/View/Posts/index.ctp, line 33]
+2016-07-13 01:39:10 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cakephp_blog/posts/index
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/c...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/c...', 33, Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/c...', 33, Array)
+#3 /var/www/html/cakephp_blog/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-07-17 07:24:49 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp_blog/add
+Stack Trace:
+#0 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-07-17 07:27:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cakephp_blog/posts
+Stack Trace:
+#0 /var/www/html/cakephp_blog/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/html/cakephp_blog/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3617): ConnectionManager::getDataSource('default')
+#3 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3644): Model->setSource('posts')
+#5 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(3022): Model->getDataSource()
+#6 /var/www/html/cakephp_blog/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#7 /var/www/html/cakephp_blog/app/Controller/PostsController.php(12): Model->find('all')
+#8 [internal function]: PostsController->index()
+#9 /var/www/html/cakephp_blog/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#10 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/html/cakephp_blog/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#12 /var/www/html/cakephp_blog/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
