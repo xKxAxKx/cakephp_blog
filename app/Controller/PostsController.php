@@ -40,7 +40,7 @@ class PostsController extends AppController {
     if($this->request->is(array('post', 'put'))){
       if($this->Post->save($this->request->data)){
         $this->Session->setFlash('更新しました!!!');
-        $this->redirect(array('action' => 'index'));
+        $this->redirect(array('action' => 'view',$post['Post']['id']));
       }else{
         $this->Session->setFlash('保存に失敗しました…');
       }
